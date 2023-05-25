@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web BTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <style>
+            
+            *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing:border-box ;
+    font-family: century;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-image:url(bts-1024x1024.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.logo a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: larger;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background: white;
+    color: black;
+}
+
+ul li.active a:hover {
+    background: white;
+    color: black;
+}
+
+.principale{
+    max-width: 114rem;
+    margin:0 auto;
+}
+
+.ins{
+    background-color:rgb(34, 34, 170) ;
+}
+.ins{
+    margin-top:0px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('SCHOOL.jpg');
+    background-size: cover;
+    font-family: Century;
+    z-index: 0;
+    position: relative;
+}
+.ins ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.07);
+    z-index: -1;
+}
+form{
+    margin-top: 25px;
+    text-align: center;
+}
+input [type="tel"]{
+    color: black;
+}
+input[type="text"] , input[type="email"], input[type="password"],input [type="date"]{
+    display: block;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    height: 25px; 
+    margin: 25px;
+    font-size: 20px;
+    background: transparent;
+    color:rgb(255, 255, 255);
+}
+#dn{
+    color: white;
+    font-size: large;
+    font-family: century;
+    
+}
+button{
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(29, 47, 110);
+    color: aliceblue;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+form h1{
+    margin-bottom: 1px ;
+    color: white;
+}
+::placeholder{
+    color:white;
+}
+
+.sexe label{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 0px;
+}
+.sexe-category{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-left: 0px;
+}
+
+#Branches{
+    display: block;
+    margin-left: 40%;
+    margin-top: 15px;
+    border: none;
+    font-size:15px;
+    
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.navbar .principale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.propos {
+    background-image: url("School\ 2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-position: center;
+    padding: 20px;
+    font-family: century;
+    color: white;
+    position: relative;
+    z-index: 0;
+  }
+  .propos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) to your preference */
+    z-index: -1;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    font-family: century;
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: century;
+    text-align: justify;
+}
+
+pre {
+
+    margin-bottom: 20px;
+    font-family: century;
+    font-size:large;
+    text-align:justify;
+}
+b {
+    color: rgb(29, 47, 110);
+}
+.contact {
+    font-size: large;
+    background-color:burlywood;
+    font-family: century;
+    padding: 5px;
+    text-align: center;
+}
+        </style>
+        <div class="Accueil" id="Accueil"></div>
+        <nav class="navbar">
+            <div class="principale">
+                <div class="logo">
+                    <a href="#Accueil">BTS</a>
+                </div>
+                <ul>
+                    <li class="active">
+                        <a href="#Accueil">Accueil</a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#A propos">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#Inscription">Inscription</a>
+                    </li>
+                    <li>
+                        <a href="#Contact">Contact</a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <body>
+</header>
+        <div class="propos" id="A propos">
+            <h1>A propos</h1>
+            <pre>
+                Les BTS (Brevet de Technicien Supérieur) au Maroc sont des formations de courte durée sur des disciplines
+                variées auxquelles il est possible d'accéder après le baccalauréat pour pour une durée de 2 ans.
+                À l’issue de leurs diplômes, les lauréats peuvent poursuivre leurs études dans les différentes écoles 
+                d'Ingénieurs marocaines ou les écoles de commerce ou encore des écoles spécialisées. De plus, ce type de 
+                profil est très demandé au marché de travail où les petites et moyennes entreprises sont prédominantes.
+                <h3>Conditions d’accès au BTS:</h3>
+                Les conditions d'accès aux classes de préparation du Brevet de Technicien Supérieur sont les suivantes:
+    
+                - Être titulaire du baccalauréat en fonction de la filière demandée, ou d'un diplôme équivalent ;
+                - Être âgé de 23 ans au plus au 30 septembre de l'année en cours ;
+                - La sélection se fait d’après la moyenne générale obtenue au baccalauréat.
+                <h3>Filières:</h3>
+                <pre>
+                    <b>D.S.I.</b> (Développement de systèmes d'informations)
+                    <b>M.I.</b> (Maintenance industrielle)
+                    <b>P.M.E.-P.M.I.</b> (Gestion des Petites et Moyennes Entreprises et des Petites et Moyennes Industries)
+                    <b>S.E.</b> (Systèmes Electroniques)
+                    <b>C.P.I.</b> (Conception du Produit Industriel)
+                    <b>E.L.T.</b> (Electrotechniques)
+                </pre>
+</div>
+<div class="ins" id="Inscription">
+    <form>
+        <h1>Inscription</h1>
+        <input type="text" name="" placeholder="Nom:">
+        <input type="text" name="" placeholder="Prénom:">
+        <input type="email" name="" placeholder="Email:">
+        <input type="password" name="" placeholder="Mot de Passe:">
+        <input type="password" name="" placeholder="Confirmer le Mot de Passe:">
+        <input type="text" name="" placeholder="Telephone:">
+        <input type="text" name="" placeholder="CIN:">
+        <div id="dn">Date de naissance </div>
+        <input type="date" name="" placeholder="Date de naissance :">
+
+        <div class="sexe">
+            <span class="sexe-category">Sexe</span>
+            <input type="radio" name="sexe" id="Masculin">
+            <label for="Masculin">Masculin</label>
+            <input type="radio" name="sexe" id="Féminin">
+            <label for="Féminin">Féminin</label>
+        </div>
+
+        <select id="Branches">
+            <option>DSI</option>
+            <option>PME</option>
+            <option>ELT</option>
+            <option>CPI</option>
+            <option>SE</option>
+            <option>MI</option>
+        </select>
+        <button type="submit"><a href="succes.html" style="text-decoration:none; color: white;">S'inscrire</a></button>
+    </form>
+</div>   
+    <div class="contact" id="Contact">
+        <h2>Contactez-nous</h2>
+         Tel: 05373-74491
+      </div>
+      
+</div>
+</body>
+</html>

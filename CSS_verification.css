@@ -1,0 +1,9 @@
+#d3{
+    position: absolute;
+    top: 340px;
+    left: 680px;
+    transform: translate(-50%,-50%);
+    font-family: Century;
+    font-weight: bold;
+    font-size: xx-large;
+}
